@@ -37,7 +37,7 @@ class Area(models.Model):
     carrera = models.ForeignKey(Carrera, on_delete = models.CASCADE)
 
     def __str__(self):
-        return self.area + self.carrera_id
+        return self.area
 
 #class Persona(models.Model):
 #    email = models.EmailField(unique=True)
@@ -61,5 +61,5 @@ class Reservaciones(models.Model):
     list_display = ('id', 'nombre_practica', 'horario')
 
     def __str__(self):
-        return self.nombre_practica + ' ' + self.area_id
+        return self.nombre_practica
 
