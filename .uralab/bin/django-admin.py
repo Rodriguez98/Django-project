@@ -1,4 +1,4 @@
-#!/home/eliseo/python/uralab/.uralab/bin/python3
+#!/home/kevin/python/uralab/.uralab/bin/python3
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
