@@ -50,6 +50,7 @@ class Area(models.Model):
 class Reservaciones(models.Model):
     nombre_practica = models.CharField(max_length=70)
     area = models.ForeignKey(Area, on_delete = models.CASCADE)
+    #revisar
     docente = models.ForeignKey(Docente, on_delete = models.CASCADE)
     asignatura = models.ForeignKey(Asignatura, on_delete = models.CASCADE)
     modalidad = models.ForeignKey(Modalidad, on_delete = models.CASCADE)
